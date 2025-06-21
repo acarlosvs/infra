@@ -30,7 +30,6 @@ services:
       - ./mongo/init/init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
     networks:
       - shared_network
-
   
   redis:
     image: redis:7-alpine
